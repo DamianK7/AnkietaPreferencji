@@ -7,8 +7,8 @@
         Title="ankietaPreferencji">
     
         <StackPanel>
-            <TextBox x:Name = "InputTextBox" Width="200" Height="30" Watermark="Wpisz imię..." 
-                     Margin="10,20,30,40"
+            <TextBox x:Name = "Imie" Width="200" Height="30" Watermark="Wpisz imię..."
+                     Margin="10"
             />
             
             <ComboBox x:Name = "ComboBox" HorizontalAlignment="Center" Width="200" Height="30" >
@@ -20,6 +20,43 @@
             <Button x:Name="SubmitButton" HorizontalAlignment="Center" Width="200" Height="30" Margin="10" Content="Zatwierdź dane" HorizontalContentAlignment="Center" Click="SubmitButton_Click"/>
             
             <TextBlock x:Name="ShowTextBlock" Width="300" Margin="10"/>
+            
+            <Grid HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    
+                    <RowDefinition Height="*" />
+
+                    <RowDefinition Height="*" />
+
+                    <RowDefinition Height="*" />
+
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="Auto" />
+
+                    <ColumnDefinition Width="*" />
+                    
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock Grid.Row="0" Grid.Column="0" Margin="10" Text="Czy lubisz programować?" />
+                <CheckBox Grid.Row ="0" Grid.Column="1" Margin="10" Content="Tak"/>
+                
+                <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" Text="Czy lewy to najlepszy piłkarz?" />
+                <CheckBox Grid.Row ="1" Grid.Column="2" Margin="10" Content="Tak"/>
+                
+                <TextBlock Grid.Row="2" Grid.Column="0" Margin="10" Text="Czy kebab to najlepsze danie?" />
+                <CheckBox Grid.Row ="2" Grid.Column="3" Margin="10" Content="Tak"/>
+                
+            </Grid>
+            
+       
         </StackPanel>
+    
+        
 
 </Window>

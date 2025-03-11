@@ -15,12 +15,12 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ankietaPreferencji
-build_property.ProjectDir = C:\Users\Damian\RiderProjects\ankietaPreferencji\ankietaPreferencji\
+build_property.ProjectDir = /home/damian/RiderProjects/AnkietaPreferencji/ankietaPreferencji/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/Damian/RiderProjects/ankietaPreferencji/ankietaPreferencji/App.axaml]
+[/home/damian/RiderProjects/AnkietaPreferencji/ankietaPreferencji/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Damian/RiderProjects/ankietaPreferencji/ankietaPreferencji/MainWindow.axaml]
+[/home/damian/RiderProjects/AnkietaPreferencji/ankietaPreferencji/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

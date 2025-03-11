@@ -9,6 +9,7 @@ public partial class MainWindow : Window
     private ComboBox _comboBox ;
     private TextBlock _showTextBlock;
     private Button _submitButton;
+    private TextBlock _podsumowanieTextBlock;
     public MainWindow()
     {
         InitializeComponent();
@@ -17,15 +18,24 @@ public partial class MainWindow : Window
         _comboBox = this.FindControl<ComboBox>("ComboBox");
         _showTextBlock = this.FindControl<TextBlock>("ShowTextBlock");
         _submitButton = this.FindControl<Button>("SubmitButtonButton");
+        _podsumowanieTextBlock = this.FindControl<TextBlock>("PodsumowanieTextBlock");
+        
 
     }
 
     private void SubmitButton_Click(object? sender, RoutedEventArgs e)
     {
         var selectedComboBoxItem = _comboBox.SelectedItem as ComboBoxItem;
-        if (selectedComboBoxItem != null)
+        
+        if (selectedComboBoxItem == null || string.IsNullOrEmpty(Imie.Text))
         {
-            _showTextBlock.Text = $"Imię: {_inputTextBox.Text}, Zainteresowanie: {selectedComboBoxItem.Content}";
+            _showTextBlock.Text = $"Wypełnij luki";
+        }
+        else
+        {
+            _showTextBlock.Text = $"Zapisano Dane";
         }
     }
+
+ 
 }
