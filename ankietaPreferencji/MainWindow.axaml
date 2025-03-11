@@ -44,17 +44,24 @@
                 </Grid.ColumnDefinitions>
                 
                 <TextBlock Grid.Row="0" Grid.Column="0" Margin="10" Text="Czy lubisz programować?" />
-                <CheckBox Grid.Row ="0" Grid.Column="1" Margin="10" Content="Tak"/>
+                <CheckBox Grid.Row ="0" Grid.Column="1" Margin="10" Content="Tak" Name="Tak1"/>
                 
                 <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" Text="Czy lewy to najlepszy piłkarz?" />
-                <CheckBox Grid.Row ="1" Grid.Column="2" Margin="10" Content="Tak"/>
+                <CheckBox Grid.Row ="1" Grid.Column="2" Margin="10" Content="Tak" Name="Tak2"/>
                 
                 <TextBlock Grid.Row="2" Grid.Column="0" Margin="10" Text="Czy kebab to najlepsze danie?" />
-                <CheckBox Grid.Row ="2" Grid.Column="3" Margin="10" Content="Tak"/>
+                <CheckBox Grid.Row ="2" Grid.Column="3" Margin="10" Content="Tak" Name="Tak3"/>
                 
             </Grid>
             
-       
+            <StackPanel>
+                
+                <Button x:Name="PodsumowanieButton" HorizontalAlignment="Center" Width="200" Height="30" Margin="10" Content="Podsumowanie" HorizontalContentAlignment="Center" Click="Podsumowanie_Button"/>
+            
+                <TextBlock x:Name="PodsumowanieTextBlock" Margin="10" HorizontalAlignment="Center"/>
+            
+            </StackPanel>
+            
         </StackPanel>
     
         

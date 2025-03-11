@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ankietaPreferencji")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6072d111ff2051340b522119e52d48b761771eaa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f394390e4f7aa98a1d6855d530fe3114a725cb0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ankietaPreferencji")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ankietaPreferencji")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

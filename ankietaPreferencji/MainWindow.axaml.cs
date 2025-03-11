@@ -1,3 +1,4 @@
+using System.Linq;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 
@@ -37,5 +38,15 @@ public partial class MainWindow : Window
         }
     }
 
- 
+    private void Podsumowanie_Button(object? sender, RoutedEventArgs e)
+    {
+        var selectedComboBoxItem = _comboBox.SelectedItem as ComboBoxItem;
+        var checkBoxTak = new[] { Tak1, Tak2, Tak3 };
+        var countedTak = checkBoxTak.Count(p => p.IsChecked == true);
+        if (selectedComboBoxItem != null)
+        {
+            _podsumowanieTextBlock.Text = $"Imię: {Imie.Text}, Zainteresowanie: {selectedComboBoxItem.Content} Liczba TAK: {countedTak}";   
+        }
+        
+    }
 }
